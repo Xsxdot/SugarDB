@@ -125,6 +125,10 @@ func handleGet(params internal.HandlerFuncParams) ([]byte, error) {
 
 	value := params.GetValues(params.Context, []string{key})[key]
 
+	if value == nil {
+		return []byte("$-1\r\n"), nil
+	}
+
 	return []byte(fmt.Sprintf("+%v\r\n", value)), nil
 }
 
