@@ -22,9 +22,9 @@ import (
 	"net"
 	"strings"
 
-	"github.com/echovault/sugardb/internal"
-	"github.com/echovault/sugardb/internal/clock"
-	"github.com/echovault/sugardb/internal/constants"
+	"github.com/Xsxdot/SugarDB/internal"
+	"github.com/Xsxdot/SugarDB/internal/clock"
+	"github.com/Xsxdot/SugarDB/internal/constants"
 )
 
 func (server *SugarDB) getCommand(cmd string) (internal.Command, error) {

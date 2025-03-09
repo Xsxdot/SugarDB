@@ -23,11 +23,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/echovault/sugardb/internal"
-	"github.com/echovault/sugardb/internal/constants"
-	"github.com/echovault/sugardb/internal/modules/hash"
-	"github.com/echovault/sugardb/internal/modules/set"
-	"github.com/echovault/sugardb/internal/modules/sorted_set"
+	"github.com/Xsxdot/SugarDB/internal"
+	"github.com/Xsxdot/SugarDB/internal/constants"
+	"github.com/Xsxdot/SugarDB/internal/modules/hash"
+	"github.com/Xsxdot/SugarDB/internal/modules/set"
+	"github.com/Xsxdot/SugarDB/internal/modules/sorted_set"
 )
 
 type KeyObject struct {

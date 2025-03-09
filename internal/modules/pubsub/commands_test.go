@@ -15,10 +15,10 @@
 package pubsub_test
 
 import (
-	"github.com/echovault/sugardb/internal"
-	"github.com/echovault/sugardb/internal/config"
-	"github.com/echovault/sugardb/internal/constants"
-	"github.com/echovault/sugardb/sugardb"
+	"github.com/Xsxdot/SugarDB/internal"
+	"github.com/Xsxdot/SugarDB/internal/config"
+	"github.com/Xsxdot/SugarDB/internal/constants"
+	"github.com/Xsxdot/SugarDB/sugardb"
 	"github.com/tidwall/resp"
 	"net"
 	"slices"

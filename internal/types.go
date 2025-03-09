@@ -23,8 +23,8 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/echovault/sugardb/internal/clock"
-	"github.com/echovault/sugardb/internal/constants"
+	"github.com/Xsxdot/SugarDB/internal/clock"
+	"github.com/Xsxdot/SugarDB/internal/constants"
 )
 
 type KeyData struct {

@@ -16,8 +16,8 @@ package sugardb
 
 import (
 	"bytes"
-	"github.com/echovault/sugardb/internal"
-	"github.com/echovault/sugardb/internal/modules/pubsub"
+	"github.com/Xsxdot/SugarDB/internal"
+	"github.com/Xsxdot/SugarDB/internal/modules/pubsub"
 	"github.com/tidwall/resp"
 	"strings"
 	"sync"

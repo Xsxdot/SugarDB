@@ -17,8 +17,8 @@ package preamble
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/echovault/sugardb/internal"
-	"github.com/echovault/sugardb/internal/clock"
+	"github.com/Xsxdot/SugarDB/internal"
+	"github.com/Xsxdot/SugarDB/internal/clock"
 	"io"
 	"os"
 	"path"

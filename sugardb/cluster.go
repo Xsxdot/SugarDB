@@ -18,7 +18,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/echovault/sugardb/internal"
+	"github.com/Xsxdot/SugarDB/internal"
 	"time"
 )
 

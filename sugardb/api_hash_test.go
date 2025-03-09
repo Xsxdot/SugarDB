@@ -16,7 +16,7 @@ package sugardb
 
 import (
 	"context"
-	"github.com/echovault/sugardb/internal/modules/hash"
+	"github.com/Xsxdot/SugarDB/internal/modules/hash"
 	"reflect"
 	"slices"
 	"testing"
@@ -1166,10 +1166,10 @@ func TestSugarDB_Hash(t *testing.T) {
 
 	t.Run("Test_HandleHPEXPIRETIME", func(t *testing.T) {
 		t.Parallel()
-	
+
 		const fixedTimestamp int64 = 1136189545000
 		var noOption ExpireOptions
-	
+
 		tests := []struct {
 			name        string
 			presetValue interface{}
@@ -1258,7 +1258,7 @@ func TestSugarDB_Hash(t *testing.T) {
 				setExpiry:   false,
 			},
 		}
-	
+
 		for _, tt := range tests {
 			t.Run(tt.name, func(t *testing.T) {
 				t.Parallel()
@@ -1268,7 +1268,7 @@ func TestSugarDB_Hash(t *testing.T) {
 						t.Error(err)
 						return
 					}
-	
+
 					if hash, ok := tt.presetValue.(hash.Hash); ok && tt.setExpiry {
 						for _, field := range tt.fields {
 							if hashValue, exists := hash[field]; exists && hashValue.Value != nil {
@@ -1281,7 +1281,7 @@ func TestSugarDB_Hash(t *testing.T) {
 						}
 					}
 				}
-	
+
 				got, err := server.HPExpireTime(tt.key, tt.fields...)
 				if (err != nil) != tt.wantErr {
 					t.Errorf("HPExpireTime() error = %v, wantErr %v", err, tt.wantErr)

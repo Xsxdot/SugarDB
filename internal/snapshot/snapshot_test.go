@@ -16,9 +16,9 @@ package snapshot_test
 
 import (
 	"fmt"
-	"github.com/echovault/sugardb/internal"
-	"github.com/echovault/sugardb/internal/clock"
-	"github.com/echovault/sugardb/internal/snapshot"
+	"github.com/Xsxdot/SugarDB/internal"
+	"github.com/Xsxdot/SugarDB/internal/clock"
+	"github.com/Xsxdot/SugarDB/internal/snapshot"
 	"os"
 	"sync/atomic"
 	"testing"

@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/echovault/sugardb/internal"
+	"github.com/Xsxdot/SugarDB/internal"
 )
 
 // HRandFieldOptions modifies the behaviour of the HRandField function.

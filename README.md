@@ -2,7 +2,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/echovault/echovault)](https://goreportcard.com/report/github.com/echovault/echovault)
 [![codecov](https://codecov.io/gh/EchoVault/SugarDB/graph/badge.svg?token=CHWTW0IUNV)](https://codecov.io/gh/EchoVault/SugarDB)
 <br/>
-[![Go Reference](https://pkg.go.dev/badge/github.com/echovault/echovault.svg)](https://pkg.go.dev/github.com/echovault/sugardb)
+[![Go Reference](https://pkg.go.dev/badge/github.com/echovault/echovault.svg)](https://pkg.go.dev/github.com/Xsxdot/SugarDB)
 [![GitHub Release](https://img.shields.io/github/v/release/EchoVault/SugarDB)]()
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 <br/>
@@ -90,7 +90,7 @@ much more powerful. Features in the roadmap include:
 <a name="usage-embedded"></a>
 # Usage (Embedded)
 
-Install SugarDB with: `go get github.com/echovault/sugardb/sugardb`.
+Install SugarDB with: `go get github.com/Xsxdot/SugarDB/sugardb`.
 
 Here's an example of using SugarDB as an embedded library.
 You can access all of SugarDB's commands using an ergonomic API.

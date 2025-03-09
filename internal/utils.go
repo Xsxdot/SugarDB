@@ -33,7 +33,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/echovault/sugardb/internal/constants"
+	"github.com/Xsxdot/SugarDB/internal/constants"
 	"github.com/sethvargo/go-retry"
 	"github.com/tidwall/resp"
 )
@@ -496,26 +496,26 @@ func GetTLSConnection(addr string, port int, config *tls.Config) (net.Conn, erro
 }
 
 func ParseInteger64ArrayResponse(b []byte) ([]int64, error) {
-    r := resp.NewReader(bytes.NewReader(b))
-    v, _, err := r.ReadValue()
-    if err != nil {
-        return nil, err
-    }
-    if v.IsNull() {
-        return []int64{}, nil
-    }
-    arr := make([]int64, len(v.Array()))
-    for i, e := range v.Array() {
-        if e.IsNull() {
-            arr[i] = 0
-            continue
-        }
-		
-        val, err := strconv.ParseInt(e.String(), 10, 64)
-        if err != nil {
-            return nil, err
-        }
-        arr[i] = val
-    }
-    return arr, nil
+	r := resp.NewReader(bytes.NewReader(b))
+	v, _, err := r.ReadValue()
+	if err != nil {
+		return nil, err
+	}
+	if v.IsNull() {
+		return []int64{}, nil
+	}
+	arr := make([]int64, len(v.Array()))
+	for i, e := range v.Array() {
+		if e.IsNull() {
+			arr[i] = 0
+			continue
+		}
+
+		val, err := strconv.ParseInt(e.String(), 10, 64)
+		if err != nil {
+			return nil, err
+		}
+		arr[i] = val
+	}
+	return arr, nil
 }

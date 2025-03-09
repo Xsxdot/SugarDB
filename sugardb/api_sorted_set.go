@@ -15,7 +15,7 @@
 package sugardb
 
 import (
-	"github.com/echovault/sugardb/internal"
+	"github.com/Xsxdot/SugarDB/internal"
 	"strconv"
 )
 

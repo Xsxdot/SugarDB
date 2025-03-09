@@ -16,7 +16,7 @@ package eviction_test
 
 import (
 	"container/heap"
-	"github.com/echovault/sugardb/internal/eviction"
+	"github.com/Xsxdot/SugarDB/internal/eviction"
 	"testing"
 	"time"
 )

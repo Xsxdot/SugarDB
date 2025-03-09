@@ -17,7 +17,7 @@ package generic
 import (
 	"errors"
 	"fmt"
-	"github.com/echovault/sugardb/internal/clock"
+	"github.com/Xsxdot/SugarDB/internal/clock"
 	"strconv"
 	"strings"
 	"time"
@@ -31,7 +31,7 @@ type SetOptions struct {
 
 type CopyOptions struct {
 	database string
-	replace bool
+	replace  bool
 }
 
 func getSetCommandOptions(clock clock.Clock, cmd []string, options SetOptions) (SetOptions, error) {
@@ -127,11 +127,11 @@ func getCopyCommandOptions(cmd []string, options CopyOptions) (CopyOptions, erro
 		return options, nil
 	}
 
-	switch strings.ToLower(cmd[0]){
+	switch strings.ToLower(cmd[0]) {
 	case "replace":
 		options.replace = true
 		return getCopyCommandOptions(cmd[1:], options)
-		
+
 	case "db":
 		if len(cmd) < 2 {
 			return CopyOptions{}, errors.New("syntax error")
@@ -141,10 +141,9 @@ func getCopyCommandOptions(cmd []string, options CopyOptions) (CopyOptions, erro
 		if err != nil {
 			return CopyOptions{}, errors.New("value is not an integer or out of range")
 		}
-		
-		options.database = cmd [1]
+
+		options.database = cmd[1]
 		return getCopyCommandOptions(cmd[2:], options)
-		
 
 	default:
 		return CopyOptions{}, fmt.Errorf("unknown option %s for copy command", strings.ToUpper(cmd[0]))

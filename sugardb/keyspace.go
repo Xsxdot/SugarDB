@@ -29,10 +29,10 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/echovault/sugardb/internal"
-	"github.com/echovault/sugardb/internal/constants"
-	"github.com/echovault/sugardb/internal/eviction"
-	"github.com/echovault/sugardb/internal/modules/hash"
+	"github.com/Xsxdot/SugarDB/internal"
+	"github.com/Xsxdot/SugarDB/internal/constants"
+	"github.com/Xsxdot/SugarDB/internal/eviction"
+	"github.com/Xsxdot/SugarDB/internal/modules/hash"
 )
 
 // SwapDBs swaps every TCP client connection from database1 over to database2.

@@ -23,8 +23,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/echovault/sugardb/internal"
-	"github.com/echovault/sugardb/internal/constants"
+	"github.com/Xsxdot/SugarDB/internal"
+	"github.com/Xsxdot/SugarDB/internal/constants"
 )
 
 func handleHSET(params internal.HandlerFuncParams) ([]byte, error) {

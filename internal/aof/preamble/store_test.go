@@ -15,9 +15,9 @@
 package preamble_test
 
 import (
-	"github.com/echovault/sugardb/internal"
-	"github.com/echovault/sugardb/internal/aof/preamble"
-	"github.com/echovault/sugardb/internal/clock"
+	"github.com/Xsxdot/SugarDB/internal"
+	"github.com/Xsxdot/SugarDB/internal/aof/preamble"
+	"github.com/Xsxdot/SugarDB/internal/clock"
 	"os"
 	"path"
 	"testing"

@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Embedded
 
-Install SugarDB with: `go get github.com/echovault/sugardb`.
+Install SugarDB with: `go get github.com/Xsxdot/SugarDB`.
 
 Here's an example of using SugarDB as an embedded library.
 You can access all of SugarDB's commands using an ergonomic API.

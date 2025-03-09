@@ -18,10 +18,10 @@ package aof
 
 import (
 	"fmt"
-	"github.com/echovault/sugardb/internal"
-	logstore "github.com/echovault/sugardb/internal/aof/log"
-	"github.com/echovault/sugardb/internal/aof/preamble"
-	"github.com/echovault/sugardb/internal/clock"
+	"github.com/Xsxdot/SugarDB/internal"
+	logstore "github.com/Xsxdot/SugarDB/internal/aof/log"
+	"github.com/Xsxdot/SugarDB/internal/aof/preamble"
+	"github.com/Xsxdot/SugarDB/internal/clock"
 	"log"
 	"sync"
 )

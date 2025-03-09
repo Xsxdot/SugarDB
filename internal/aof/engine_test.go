@@ -16,11 +16,11 @@ package aof_test
 
 import (
 	"fmt"
-	"github.com/echovault/sugardb/internal"
-	"github.com/echovault/sugardb/internal/aof"
-	"github.com/echovault/sugardb/internal/aof/log"
-	"github.com/echovault/sugardb/internal/aof/preamble"
-	"github.com/echovault/sugardb/internal/clock"
+	"github.com/Xsxdot/SugarDB/internal"
+	"github.com/Xsxdot/SugarDB/internal/aof"
+	"github.com/Xsxdot/SugarDB/internal/aof/log"
+	"github.com/Xsxdot/SugarDB/internal/aof/preamble"
+	"github.com/Xsxdot/SugarDB/internal/clock"
 	"os"
 	"sync/atomic"
 	"testing"

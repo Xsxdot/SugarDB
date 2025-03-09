@@ -17,8 +17,8 @@ package log_test
 import (
 	"bytes"
 	"fmt"
-	"github.com/echovault/sugardb/internal/aof/log"
-	"github.com/echovault/sugardb/internal/clock"
+	"github.com/Xsxdot/SugarDB/internal/aof/log"
+	"github.com/Xsxdot/SugarDB/internal/clock"
 	"os"
 	"path"
 	"testing"

@@ -17,7 +17,7 @@ package sugardb
 import (
 	"bytes"
 	"fmt"
-	"github.com/echovault/sugardb/internal"
+	"github.com/Xsxdot/SugarDB/internal"
 	"github.com/tidwall/resp"
 	"strings"
 )

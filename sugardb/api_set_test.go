@@ -16,7 +16,7 @@ package sugardb
 
 import (
 	"context"
-	"github.com/echovault/sugardb/internal/modules/set"
+	"github.com/Xsxdot/SugarDB/internal/modules/set"
 	"reflect"
 	"slices"
 	"testing"

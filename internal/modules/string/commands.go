@@ -18,8 +18,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/echovault/sugardb/internal"
-	"github.com/echovault/sugardb/internal/constants"
+	"github.com/Xsxdot/SugarDB/internal"
+	"github.com/Xsxdot/SugarDB/internal/constants"
 )
 
 func handleSetRange(params internal.HandlerFuncParams) ([]byte, error) {

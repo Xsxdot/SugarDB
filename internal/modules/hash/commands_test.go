@@ -23,12 +23,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/echovault/sugardb/internal"
-	"github.com/echovault/sugardb/internal/clock"
-	"github.com/echovault/sugardb/internal/config"
-	"github.com/echovault/sugardb/internal/constants"
-	"github.com/echovault/sugardb/internal/modules/hash"
-	"github.com/echovault/sugardb/sugardb"
+	"github.com/Xsxdot/SugarDB/internal"
+	"github.com/Xsxdot/SugarDB/internal/clock"
+	"github.com/Xsxdot/SugarDB/internal/config"
+	"github.com/Xsxdot/SugarDB/internal/constants"
+	"github.com/Xsxdot/SugarDB/internal/modules/hash"
+	"github.com/Xsxdot/SugarDB/sugardb"
 	"github.com/tidwall/resp"
 )
 
@@ -2504,9 +2504,9 @@ func Test_Hash(t *testing.T) {
 			_ = conn.Close()
 		}()
 		client := resp.NewConn(conn)
-	
+
 		const fixedTimestamp = 1136189545000
-	
+
 		tests := []struct {
 			name          string
 			key           string
@@ -2589,12 +2589,12 @@ func Test_Hash(t *testing.T) {
 				expectedError: errors.New("expire time must be integer, was provided \"notanumber\""),
 			},
 		}
-	
+
 		for _, test := range tests {
 			t.Run(test.name, func(t *testing.T) {
 				if test.presetValue != nil {
 					var command []resp.Value
-	
+
 					switch v := test.presetValue.(type) {
 					case string:
 						command = []resp.Value{
@@ -2608,14 +2608,14 @@ func Test_Hash(t *testing.T) {
 							command = append(command, resp.StringValue(key), resp.StringValue(value.Value.(string)))
 						}
 					}
-	
+
 					if err = client.WriteArray(command); err != nil {
 						t.Error(err)
 					}
 					if _, _, err = client.ReadValue(); err != nil {
 						t.Error(err)
 					}
-	
+
 					if test.setExpire {
 						if hash, ok := test.presetValue.(hash.Hash); ok {
 							for field := range hash {
@@ -2637,7 +2637,7 @@ func Test_Hash(t *testing.T) {
 						}
 					}
 				}
-	
+
 				// Execute HPEXPIRETIME command
 				command := make([]resp.Value, len(test.command))
 				for i, v := range test.command {
@@ -2646,19 +2646,19 @@ func Test_Hash(t *testing.T) {
 				if err = client.WriteArray(command); err != nil {
 					t.Error(err)
 				}
-	
+
 				resp, _, err := client.ReadValue()
 				if err != nil {
 					t.Error(err)
 				}
-	
+
 				if test.expectedError != nil {
 					if !strings.Contains(resp.Error().Error(), test.expectedError.Error()) {
 						t.Errorf("expected error %q, got %q", test.expectedError.Error(), resp.Error())
 					}
 					return
 				}
-	
+
 				if resp.String() != test.expectedValue {
 					t.Errorf("Expected value %q but got %q", test.expectedValue, resp.String())
 				}

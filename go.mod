@@ -1,4 +1,4 @@
-module github.com/echovault/sugardb
+module github.com/Xsxdot/SugarDB
 
 go 1.23.3
 
@@ -8,6 +8,7 @@ require (
 	github.com/hashicorp/memberlist v0.5.1
 	github.com/hashicorp/raft v1.7.1
 	github.com/hashicorp/raft-boltdb v0.0.0-20230125174641-2a8082862702
+	github.com/robertkrimen/otto v0.5.1
 	github.com/sethvargo/go-retry v0.3.0
 	github.com/tidwall/resp v0.1.1
 	github.com/yuin/gopher-lua v1.1.1
@@ -30,7 +31,6 @@ require (
 	github.com/mattn/go-colorable v0.1.12 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/miekg/dns v1.1.26 // indirect
-	github.com/robertkrimen/otto v0.5.1 // indirect
 	github.com/sean-/seed v0.0.0-20170313163322-e2103e2c3529 // indirect
 	golang.org/x/crypto v0.14.0 // indirect
 	golang.org/x/net v0.16.0 // indirect

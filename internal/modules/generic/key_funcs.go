@@ -17,8 +17,8 @@ package generic
 import (
 	"errors"
 
-	"github.com/echovault/sugardb/internal"
-	"github.com/echovault/sugardb/internal/constants"
+	"github.com/Xsxdot/SugarDB/internal"
+	"github.com/Xsxdot/SugarDB/internal/constants"
 )
 
 func setKeyFunc(cmd []string) (internal.KeyExtractionFuncResult, error) {
